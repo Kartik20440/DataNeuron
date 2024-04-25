@@ -70,4 +70,4 @@ if __name__ == "__main__":
         save_data([])
     if not os.path.exists("count_file"):
         save_count({"add": 0, "update": 0})
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port='10000', debug=True)
